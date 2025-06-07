@@ -5,54 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VM Studio - Constructora de Excelencia</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header/Navbar -->
-    <header>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <span>VM</span>Studio
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+            <div class="logo">VM<span>Studio</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Construyendo el futuro</h1>
+            <p class="subtitle">Innovación y calidad en cada proyecto</p>
+            <a href="#proyectos" class="cta-button">Ver nuestros trabajos</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <h1>Construyendo el futuro</h1>
-            <p>Innovación y calidad en cada proyecto</p>
-            <a href="#proyectos" class="btn">Ver nuestros trabajos</a>
-        </div>
-    </section>
-
     <!-- Sobre Nosotros -->
-    <section class="about" id="nosotros">
+    <section class="about" id="servicios">
         <div class="container">
             <h2>VM Studio</h2>
-            <div class="about-content">
-                <p>Somos una constructora especializada en proyectos arquitectónicos modernos y eficientes. Combinamos diseño innovador con los más altos estándares de calidad.</p>
-                <div class="features">
-                    <div class="feature">
-                        <i class="fas fa-drafting-compass"></i>
-                        <h3>Diseño</h3>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-hard-hat"></i>
-                        <h3>Construcción</h3>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-home"></i>
-                        <h3>Proyectos</h3>
-                    </div>
+            <p class="about-text">Somos una constructora especializada en proyectos arquitectónicos modernos y eficientes. Combinamos diseño innovador con los más altos estándares de calidad.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-drafting-compass service-icon"></i>
+                    <h3>Diseño</h3>
+                    <p>Soluciones arquitectónicas personalizadas</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hard-hat service-icon"></i>
+                    <h3>Construcción</h3>
+                    <p>Ejecución con estándares internacionales</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building service-icon"></i>
+                    <h3>Proyectos</h3>
+                    <p>Desarrollo integral de obras</p>
                 </div>
             </div>
         </div>
@@ -63,25 +61,30 @@
         <div class="container">
             <h2>Nuestros Proyectos</h2>
             <div class="projects-grid">
-                <div class="project">
-                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Edificio Corporativo">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto 1">
                     <div class="project-info">
-                        <h3>Edificio Corporativo Norte</h3>
-                        <p>Oficinas modernas con diseño sostenible</p>
+                        <h3>Edificio Corporativo</h3>
+                        <p>Oficinas modernas | 2023</p>
                     </div>
                 </div>
-                <div class="project">
-                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Residencial">
+                
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto 2">
                     <div class="project-info">
-                        <h3>Residencial Las Lomas</h3>
-                        <p>Viviendas de lujo con amenities exclusivos</p>
+                        <h3>Residencial Premium</h3>
+                        <p>Viviendas de lujo | 2022</p>
                     </div>
                 </div>
-                <div class="project">
-                    <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Centro Comercial">
+                
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proyecto 3">
                     <div class="project-info">
-                        <h3>Centro Comercial Este</h3>
-                        <p>Espacios comerciales integrados</p>
+                        <h3>Centro Comercial</h3>
+                        <p>Espacios comerciales | 2021</p>
                     </div>
                 </div>
             </div>
@@ -92,17 +95,17 @@
     <section class="contact" id="contacto">
         <div class="container">
             <h2>Contacto</h2>
-            <div class="contact-content">
-                <form>
+            <div class="contact-wrapper">
+                <form class="contact-form">
                     <input type="text" placeholder="Nombre" required>
                     <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" required></textarea>
-                    <button type="submit" class="btn">Enviar Mensaje</button>
+                    <textarea placeholder="Tu mensaje..." required></textarea>
+                    <button type="submit" class="cta-button">Enviar Mensaje</button>
                 </form>
                 <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> Av. Constructora 1234, Ciudad</p>
-                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                    <p><i class="fas fa-envelope"></i> info@vmstudio.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección: Av. Constructora 1234</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@vmstudio.com</p>
                 </div>
             </div>
         </div>
@@ -112,10 +115,10 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 VM Studio. Todos los derechos reservados.</p>
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
