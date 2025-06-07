@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  header {
+  background-color: #007acc;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+}
+
+/* Navegación */
+nav {
+  background-color: #005bb5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Proyectos */
+.proyecto {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.proyecto h3 {
+  color: #007BFF;
+}
+
+/* Contacto */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Pie de página */
+footer {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
