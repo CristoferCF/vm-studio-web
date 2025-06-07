@@ -86,34 +86,46 @@ header h1 {
   font-size: 2rem;
 }
 
+/* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0,0,64,0.6), rgba(0,0,64,0.6)), url('https://via.placeholder.com/1200x400?text=VM+Estudio');
+  background: url('https://via.placeholder.com/1200x400?text=VM+Estudio');
   background-size: cover;
   background-position: center;
-  color: white;
   text-align: center;
   padding: 100px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 64, 0.6);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #0a1f44 !important; /* Aquí forzamos el azul oscuro */
-  background-color: white; /* Para que destaque y no se confunda */
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 12px;
+  background-color: rgba(10, 31, 68, 0.9);
+  color: white;
+  font-size: 3rem;
   font-weight: 900;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .hero p {
+  color: white;
   font-size: 1.3rem;
-  color: #0a1f44;
-  background-color: white;
-  display: inline-block;
-  padding: 5px 15px;
-  border-radius: 10px;
   margin-top: 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
 }
 
 .services, .projects {
