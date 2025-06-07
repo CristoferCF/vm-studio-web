@@ -9,93 +9,89 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-<header>
-  <div class="container header-container">
-    <div class="logo">VM Estudio</div>
-
-    <nav id="navbar" aria-label="Menú principal">
-      <ul class="nav-list">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbar">☰</button>
-  </div>
-</header>
-
-<section class="hero" aria-label="Sección principal">
-  <div class="container hero-content">
-    <h2>Construimos tus ideas</h2>
-    <p>Arquitectura, diseño y ejecución de obras con excelencia.</p>
-    <a href="#servicios" class="btn-primary">Conoce más</a>
-  </div>
-</section>
-
-<section id="servicios">
-  <div class="container">
-    <h3>Nuestros Servicios</h3>
-    <div class="service-grid">
-      <div class="service-card">
-        <span aria-hidden="true">🏗️</span>
-        <h4>Construcción</h4>
-        <p>Edificios, casas y obras comerciales llave en mano.</p>
-      </div>
-      <div class="service-card">
-        <span aria-hidden="true">🖊️</span>
-        <h4>Diseño Arquitectónico</h4>
-        <p>Planificación moderna, funcional y personalizada.</p>
-      </div>
-      <div class="service-card">
-        <span aria-hidden="true">🧱</span>
-        <h4>Remodelaciones</h4>
-        <p>Transformamos y renovamos tus espacios.</p>
-      </div>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">VM Estudio</h1>
+      <nav id="navbar" class="nav" role="navigation" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li><a href="#" tabindex="0">Inicio</a></li>
+          <li><a href="#servicios" tabindex="0">Servicios</a></li>
+          <li><a href="#proyectos" tabindex="0">Proyectos</a></li>
+          <li><a href="#contacto" tabindex="0">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbar">☰</button>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="proyectos">
-  <div class="container">
-    <h3>Proyectos Destacados</h3>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x200?text=Casa+Moderna" alt="Casa Moderna" />
-        <h4>Casa Moderna</h4>
+  <main>
+    <section class="hero" role="banner">
+      <div class="container hero-content">
+        <h2 tabindex="0">Construimos tus ideas</h2>
+        <p tabindex="0">Arquitectura, diseño y ejecución de obras con excelencia.</p>
+        <a href="#servicios" class="btn-primary" tabindex="0">Ver Servicios</a>
       </div>
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x200?text=Oficina+Minimalista" alt="Oficina Minimalista" />
-        <h4>Oficina Minimalista</h4>
+    </section>
+
+    <section id="servicios" class="services" role="region" aria-labelledby="servicios-title">
+      <div class="container">
+        <h3 id="servicios-title">Nuestros Servicios</h3>
+        <div class="service-grid">
+          <article class="service-card" tabindex="0" aria-label="Construcción">
+            <span aria-hidden="true">🏗️</span>
+            <h4>Construcción</h4>
+            <p>Edificios, casas y obras comerciales llave en mano.</p>
+          </article>
+          <article class="service-card" tabindex="0" aria-label="Diseño Arquitectónico">
+            <span aria-hidden="true">🖊️</span>
+            <h4>Diseño Arquitectónico</h4>
+            <p>Planificación moderna, funcional y personalizada.</p>
+          </article>
+          <article class="service-card" tabindex="0" aria-label="Remodelaciones">
+            <span aria-hidden="true">🧱</span>
+            <h4>Remodelaciones</h4>
+            <p>Transformamos y renovamos tus espacios.</p>
+          </article>
+        </div>
       </div>
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x200?text=Remodelación+Local" alt="Remodelación de Local" />
-        <h4>Remodelación de Local</h4>
+    </section>
+
+    <section id="proyectos" class="projects" role="region" aria-labelledby="proyectos-title">
+      <div class="container">
+        <h3 id="proyectos-title">Proyectos Destacados</h3>
+        <div class="project-grid">
+          <article class="project-card" tabindex="0">
+            <img src="https://via.placeholder.com/300x200?text=Casa+Moderna" alt="Casa Moderna" />
+            <h4>Casa Moderna</h4>
+          </article>
+          <article class="project-card" tabindex="0">
+            <img src="https://via.placeholder.com/300x200?text=Oficina+Minimalista" alt="Oficina Minimalista" />
+            <h4>Oficina Minimalista</h4>
+          </article>
+          <article class="project-card" tabindex="0">
+            <img src="https://via.placeholder.com/300x200?text=Remodelación+Local" alt="Remodelación de Local" />
+            <h4>Remodelación de Local</h4>
+          </article>
+        </div>
       </div>
+    </section>
+  </main>
+
+  <footer id="contacto" role="contentinfo">
+    <div class="container">
+      <p tabindex="0">&copy; 2025 VM Estudio | contacto@vmestudio.com | +56 9 1234 5678</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer id="contacto">
-  <div class="container">
-    <p>&copy; 2025 VM Estudio | contacto@vmestudio.com | +56 9 1234 5678</p>
-  </div>
-</footer>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('navbar');
 
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('navbar');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    toggle.classList.toggle('open');
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-  });
-</script>
-
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
 </body>
 </html>
 
