@@ -1,10 +1,11 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
@@ -150,45 +151,4 @@ h3 {
 .project-card h4 {
   margin: 15px 0;
   font-weight: 700;
-  color: #0a1f44;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  height: 180px;
-}
-
-/* Footer */
-footer {
-  background-color: #0a1f44;
-  color: white;
-  text-align: center;
-  padding: 25px 10px;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-list {
-    flex-direction: column;
-    gap: 15px;
-    background-color: #0a1f44;
-    position: absolute;
-    top: 65px;
-    right: 0;
-    width: 200px;
-    padding: 20px;
-    border-radius: 0 0 0 8px;
-    display: none;
-  }
-
-  nav.open .nav-list {
-    display: flex;
-  }
-
-  #menu-toggle {
-    display: block;
-  }
-}
+  color: #0a
