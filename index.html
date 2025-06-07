@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VM Estudio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -20,70 +20,63 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <div id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</div>
+      <div id="menu-toggle" class="menu-toggle">☰</div>
     </div>
   </header>
 
-  <section class="hero" role="banner">
+  <section class="hero">
     <div class="container">
       <h2>Construimos tus ideas</h2>
       <p>Arquitectura, diseño y ejecución de obras con excelencia.</p>
-      <button class="btn-primary" onclick="alert('Contacto pronto disponible!')">Contáctanos</button>
     </div>
   </section>
 
-  <main>
-    <section id="servicios" class="services" aria-labelledby="servicios-titulo">
-      <div class="container">
-        <h3 id="servicios-titulo">Nuestros Servicios</h3>
-        <div class="service-grid">
-          <article class="service-card" tabindex="0" aria-label="Construcción">
-            <div class="icon" aria-hidden="true">🏗️</div>
-            <h4>Construcción</h4>
-            <p>Edificios, casas y obras comerciales llave en mano.</p>
-          </article>
-
-          <article class="service-card" tabindex="0" aria-label="Diseño Arquitectónico">
-            <div class="icon" aria-hidden="true">🖊️</div>
-            <h4>Diseño Arquitectónico</h4>
-            <p>Planificación moderna, funcional y personalizada.</p>
-          </article>
-
-          <article class="service-card" tabindex="0" aria-label="Remodelaciones">
-            <div class="icon" aria-hidden="true">🧱</div>
-            <h4>Remodelaciones</h4>
-            <p>Transformamos y renovamos tus espacios.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="proyectos" class="projects" aria-labelledby="proyectos-titulo">
-      <div class="container">
-        <h3 id="proyectos-titulo">Proyectos Destacados</h3>
-        <div class="project-grid">
-          <article class="project-card" tabindex="0" aria-label="Casa Moderna">
-            <img src="https://via.placeholder.com/300x200?text=Casa+Moderna" alt="Foto de Casa Moderna" />
-            <h4>Casa Moderna</h4>
-          </article>
-
-          <article class="project-card" tabindex="0" aria-label="Oficina Minimalista">
-            <img src="https://via.placeholder.com/300x200?text=Oficina+Minimalista" alt="Foto de Oficina Minimalista" />
-            <h4>Oficina Minimalista</h4>
-          </article>
-
-          <article class="project-card" tabindex="0" aria-label="Remodelación de Local">
-            <img src="https://via.placeholder.com/300x200?text=Remodelación+Local" alt="Foto de Remodelación de Local" />
-            <h4>Remodelación de Local</h4>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer id="contacto" role="contentinfo">
+  <section id="servicios" class="services">
     <div class="container">
-      <p>© 2025 VM Estudio | <a href="mailto:contacto@vmestudio.com">contacto@vmestudio.com</a> | <a href="tel:+56912345678">+56 9 1234 5678</a></p>
+      <h3>Nuestros Servicios</h3>
+      <div class="service-grid">
+        <div class="service-card">
+          🏗️
+          <h4>Construcción</h4>
+          <p>Edificios, casas y obras comerciales llave en mano.</p>
+        </div>
+        <div class="service-card">
+          🖊️
+          <h4>Diseño Arquitectónico</h4>
+          <p>Planificación moderna, funcional y personalizada.</p>
+        </div>
+        <div class="service-card">
+          🧱
+          <h4>Remodelaciones</h4>
+          <p>Transformamos y renovamos tus espacios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h3>Proyectos Destacados</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200?text=Casa+Moderna" alt="Casa Moderna" />
+          <h4>Casa Moderna</h4>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200?text=Oficina+Minimalista" alt="Oficina Minimalista" />
+          <h4>Oficina Minimalista</h4>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200?text=Remodelación+Local" alt="Remodelación" />
+          <h4>Remodelación de Local</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <div class="container">
+      <p>&copy; 2025 VM Estudio | contacto@vmestudio.com | +56 9 1234 5678</p>
     </div>
   </footer>
 
